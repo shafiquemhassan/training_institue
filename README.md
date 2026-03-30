@@ -60,3 +60,8 @@ This project was created primarily for **learning and experimentation**. The goa
 
 ---
 
+You can now log in to the respective panels using these accounts:
+
+Admin: admin@example.com / admin@123
+Editor: editor@example.com / editor@123
+Employee: employee@example.com / employee@123
