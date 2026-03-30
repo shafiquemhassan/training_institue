@@ -28,6 +28,7 @@ class EditorPanelProvider extends PanelProvider
             ->path('editor')
             ->brandName('Editor Dashboard')
             ->login()
+            ->registration()
             ->profile()
             ->colors([
                 'primary' => Color::Indigo,

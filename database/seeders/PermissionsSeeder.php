@@ -46,22 +46,22 @@ class PermissionsSeeder extends Seeder
         }
 
         $admin = Role::firstOrCreate(['name' => 'admin', 'guard_name' => $guard]);
-        // $editor = Role::firstOrCreate(['name' => 'editor', 'guard_name' => $guard]);
-        // $employee = Role::firstOrCreate(['name' => 'editor', 'guard_name' => $guard]);
+        $editor = Role::firstOrCreate(['name' => 'editor', 'guard_name' => $guard]);
+        $employee = Role::firstOrCreate(['name' => 'employee', 'guard_name' => $guard]);
 
-        // $editorPermissions = [
-        //     'view_users',
-        //     'create_users',
-        //     'edit_users',
-        //     'view_roles'
-        // ];
+        $editorPermissions = [
+            'view_users',
+            'create_users',
+            'edit_users',
+            'view_roles'
+        ];
 
         $employeePermissions = [
             'view_users',
         ];
 
         $admin->syncPermissions($allPermissions);
-        // $editor->syncPermissions($editorPermissions);
-        // $employee->syncPermissions($employeePermissions);
+        $editor->syncPermissions($editorPermissions);
+        $employee->syncPermissions($employeePermissions);
     }
 }

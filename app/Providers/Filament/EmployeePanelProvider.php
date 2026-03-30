@@ -28,6 +28,7 @@ class EmployeePanelProvider extends PanelProvider
             ->path('employee')
             ->brandName('Employee Dashboard')
             ->login()
+            ->registration()
             ->profile()
             ->colors([
                 'primary' => Color::Emerald,
